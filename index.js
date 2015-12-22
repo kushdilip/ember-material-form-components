@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'material-form-components'
+  name: 'ember-material-form-components'
 };

@@ -1,0 +1,12 @@
+{{!-- {{mdl-textfield label=label value=value class="mdl-cell mdl-cell--12-col" errorMessage=errorMessage}} --}}
+<div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-textfield--floating-label is-dirty">  
+  {{input class="mdl-textfield__input" type="text" pattern=pattern disabled=disabled value=value}}
+  {{!-- <input type="text" class="mdl-textfield__input" autocomplete="off" value={{value}}> --}}
+  <label class="mdl-textfield__label">
+    {{label}}
+    <i class="material-icons {{if mandatory '' 'hidden'}}">star</i>
+  </label>
+  {{#if errorMessage}}
+    <span class="mdl-textfield__error">{{errorMessage}}</span>
+  {{/if}}
+</div>

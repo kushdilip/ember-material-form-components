@@ -1,0 +1,1 @@
+export { default } from 'ember-material-form-components/components/base-edit-component';
