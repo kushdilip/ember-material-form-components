@@ -1,8 +1,7 @@
 {
-  "name": "ember-cli-material-form-components",
+  "name": "ember-material-form-components",
   "version": "0.0.1",
-  "description": "The addon consisting of all the basic input fields and other materialized 
-    components with the help of getmdl.io",
+  "description": "The addon consisting of all the basic input fields and other materialized components with the help of getmdl.io",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -12,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/ArtooTrills/ember-cli-material-form-components",
+  "repository": "https://github.com/ArtooTrills/ember-material-form-components",
   "engines": {
     "node": ">= 0.10.0"
   },
