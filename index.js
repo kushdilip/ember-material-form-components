@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-material-form-components'
+  name: 'material-form-components'
 };
