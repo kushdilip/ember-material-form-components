@@ -1,0 +1,52 @@
+<div id="wrap" class="mdl-layout__container">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">
+            <a href="#" class="role-title">Ember Material Form Components</a>
+          </span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="sample6" />
+              <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+            </div>
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+              <i class="material-icons">search</i>
+            </label>
+          </div>
+          
+          <div id="print-menu"></div>
+          
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+            <i class="material-icons">person</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+            <li class="mdl-menu__item">Menu 1</li>
+            <li class="mdl-menu__item">Menu 2</li>
+            <li class="mdl-menu__item">Menu 3</li>
+          </ul>
+        </div>
+
+      </header>
+      <div class="mdl-layout__drawer mdl-color-text--grey-50">
+        <nav class="mdl-navigation mdl-layout-spacer">
+          {{#link-to 'index' tagName='a' class='mdl-navigation__link'}}
+            <i class="material-icons" role="presentation">chrome_reader_mode</i>
+            <br>Link 1
+          {{/link-to}}
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100" style="padding:20px;">
+        {{outlet}}
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer--bottom-section" style="text-align:center;">
+            <p class="muted credit">
+              Copyrights © 2016
+              |  <a href="#">Privacy Policy </a>|  <a href="#">Terms & Conditions</a>
+            </p><br>
+          </div>
+        </footer>
+      </main>
+  </div>
+</div>

@@ -12,7 +12,7 @@ module.exports = {
 
   afterInstall: function(options) {
     var packages = [
-      'ember-material-lite@0.1.13'
+      // 'ember-material-lite@0.1.13'
     ];
 
     if (typeof this.addAddonsToProject === 'function') { // newer versions of ember-cli
