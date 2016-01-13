@@ -1,6 +1,6 @@
 {
   "name": "ember-material-form-components",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Set of material design(getmdl.io) based components to be used in standard web forms.",
   "directories": {
     "doc": "doc",
