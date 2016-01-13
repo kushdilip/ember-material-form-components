@@ -12,23 +12,23 @@ export default Ember.Component.extend({
   classNameBindings: ['hidden'],
   attributeBindings: ['property:data-property', 'lookupCategory:data-lookup'],
     
-  disableEdit: Ember.computed.equal('config.editable', false),
-  defaultValue: Ember.computed.oneWay('config.default'),
-  label: Ember.computed.oneWay('config.label'),
-  hidden: Ember.computed.not('config.inEdit'),
-  optional: Ember.computed.oneWay('config.optional'),
-  required: Ember.computed.oneWay('config.required'),
-  variable: Ember.computed.oneWay('config.variable'),
-  regex: Ember.computed.oneWay('config.regex'),
-  format: Ember.computed.oneWay('config.format'),
+  disableEdit: Ember.computed.equal('setting.editable', false),
+  defaultValue: Ember.computed.oneWay('setting.default'),
+  label: Ember.computed.oneWay('setting.label'),
+  hidden: Ember.computed.not('setting.inEdit'),
+  optional: Ember.computed.oneWay('setting.optional'),
+  required: Ember.computed.oneWay('setting.required'),
+  variable: Ember.computed.oneWay('setting.variable'),
+  regex: Ember.computed.oneWay('setting.regex'),
+  format: Ember.computed.oneWay('setting.format'),
   
-  newLine: Ember.computed.oneWay('config.newLine'),
+  newLine: Ember.computed.oneWay('setting.newLine'),
   
-  categoryVisible: Ember.computed.oneWay('config.category_visible'),
-  categoryLabel: Ember.computed.oneWay('config.category_label'),
-  categoryDefault: Ember.computed.oneWay('config.category_default'),
+  categoryVisible: Ember.computed.oneWay('setting.category_visible'),
+  categoryLabel: Ember.computed.oneWay('setting.category_label'),
+  categoryDefault: Ember.computed.oneWay('setting.category_default'),
   
-  parentProperty: Ember.computed.oneWay('config.parentProperty'),
+  parentProperty: Ember.computed.oneWay('setting.parentProperty'),
   
   propertyName: Ember.computed.oneWay('properties.child'),
   model: Ember.computed('parentView.content', 'properties.parent', {
