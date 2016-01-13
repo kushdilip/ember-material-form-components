@@ -1,8 +1,8 @@
 # Ember-material-form-components
 [![npm version](https://badge.fury.io/js/ember-material-form-components.svg)](https://badge.fury.io/js/ember-material-form-components) [![Build Status](https://travis-ci.org/ArtooTrills/ember-material-form-components.svg?branch=master)](https://travis-ci.org/ArtooTrills/ember-material-form-components) [![Coverage Status](https://coveralls.io/repos/ArtooTrills/ember-material-form-components/badge.svg?branch=master&service=github)](https://coveralls.io/github/ArtooTrills/ember-material-form-components?branch=master)
 
-
-This README outlines the details of collaborating on this Ember addon.
+## Demo 
+http://artootrills.github.io/ember-material-form-components/
 
 ## Usage
 In your Ember projects run 
