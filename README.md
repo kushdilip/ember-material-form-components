@@ -4,6 +4,18 @@
 
 This README outlines the details of collaborating on this Ember addon.
 
+## Usage
+In your Ember projects run 
+`ember install ember-material-form-components`
+
+
+above command will automatically install the required pacakges/addons
+  - **ember-material-lite** which takes care of installing it's own dependencies.
+
+Now if you want a standard material design layout then run
+`ember generate material-form-ui`
+this blueprint will generate standard `application.hbs` and `app.scss` files for you in standard folders.
+
 ## Installation
 
 * `git clone` this repository

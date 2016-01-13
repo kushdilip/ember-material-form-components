@@ -451,3 +451,23 @@ ul.pagination {
     color: white;
   }
 }
+.sortable-item {
+  transition: all .125s;
+}
+.sortable-item.is-dragging {
+  transition-duration: 0s;
+  background: red;
+  z-index: 10;
+}
+.sortable-item.is-dropping {
+  background: #f66;
+  z-index: 10;
+}
+.sortable-item .handle {
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  background: rgba(127, 0, 0, .5);
+  color: pink;
+  cursor:move
+}
