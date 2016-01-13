@@ -6,6 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('textfield');
+  this.route('checkbox');
+  this.route('select');
+  this.route('date');
 });
 
 export default Router;

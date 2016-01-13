@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import EditFieldMixin from '../mixins/edit-field';
+import EditFieldMixin from 'ember-material-form-components/mixins/edit-field';
 
 export default Ember.Component.extend(EditFieldMixin, {
   didInsertElement: function () {

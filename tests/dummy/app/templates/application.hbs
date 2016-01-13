@@ -1,13 +1,15 @@
-<div class="mdl-grid">
-{{#mdl-card title='Welcome to Ember.js'}}
-  <div class="mdl-card__supporting-text">
-    You have successfully installed <a href='https://github.com/truenorth/ember-material-lite' target='_blank'>ember-material-lite</a>. It's based on an awesome google project called <a href='https://github.com/google/material-design-lite' target='_blank'>Material Design Lite</a>
+{{#x-nav title='Ember Material Form Components'
+  mobileTitle='Ember MFC'
+  includeHeaderItems=false
+  includeDrawerTitle=false
+  fixedHeader=true
+  fixedDrawer=true}}
+    {{mdl-nav-item name='Textfield'  inHeader=false route='textfield'}}
+    {{mdl-nav-item name='Checkbox'   inHeader=false route='checkbox'}}
+    {{mdl-nav-item name='Select'     inHeader=false route='select'}}
+    {{mdl-nav-item name='Date'       inHeader=false route='date'}}
+  <div class="mdl-grid">
+
+    {{outlet}}
   </div>
-  {{#mdl-card-actions}}
-    {{mdl-button text='Test Button'}}
-  {{/mdl-card-actions}}
-{{/mdl-card}}
-</div>
-
-
-{{outlet}}
+{{/x-nav}}
