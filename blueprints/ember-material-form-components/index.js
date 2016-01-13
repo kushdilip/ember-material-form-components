@@ -8,7 +8,8 @@ module.exports = {
 
   beforeInstall: function (options) {
     return RSVP.all([
-      this.addBowerPackageToProject('material-design-icons', '~2.1.0')
+      this.addBowerPackageToProject('material-design-icons', '~2.1.0'),
+      this.installPackages(options, ['ember-material-lite@0.1.13'])
     ]);
   },
 
@@ -19,17 +20,13 @@ module.exports = {
   //   };
   // }
 
-  afterInstall: function(options) {
-    var packages = [
-      'ember-material-lite@0.1.13'
-    ];
-
+  installPackages: function(options, packages) {
     if (typeof this.addAddonsToProject === 'function') { // newer versions of ember-cli
       return this.addAddonsToProject({
         packages: packages
       });
     }
-
+    
     return packages.reduce(function (prev, pkg, index) {
       if (index === 1) {
         prev = this.addAddonToProject(prev);

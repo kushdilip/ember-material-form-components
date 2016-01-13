@@ -12,6 +12,9 @@ module.exports = {
     //style code to import materils icons separately
     app.import('vendor/material-import.css');
     
+    // Import materialjs
+    app.import('bower_components/material-design-lite/material.min.js');
+    
     // Import font files
     var materialIconPath = path.join(app.bowerDirectory, 'material-design-icons/iconfont');
     app.import(path.join(materialIconPath, 'MaterialIcons-Regular.eot'), {destDir: '/fonts'});
